@@ -180,12 +180,12 @@ opscripts uninstall
     `vjdump --liveheap [pid]`
     > 使用唯品会的vjdump一次性快速dump现场信息，包括：
     > 
-    > - JVM启动参数及命令行参数: jinfo -flags $PID
-    > - thread dump数据：jstack -l $PID
-    > - sjk ttop JVM概况及繁忙线程：vjtop.sh -n 1 -d 3 $PID (需要将vjtop.sh 加入用户的PATH变量中)
-    > - jmap histo 堆对象统计数据：jmap -histo $PID & jmap -histo:live $PID
+    > - JVM启动参数及命令行参数: jinfo -flags [pid]
+    > - thread dump数据：jstack -l [pid]
+    > - sjk ttop JVM概况及繁忙线程：vjtop.sh -n 1 -d 3 [pid] (需要将vjtop.sh 加入用户的PATH变量中)
+    > - jmap histo 堆对象统计数据：jmap -histo [pid] & jmap -histo:live [pid]
     > - GC日志(如果JVM有设定GC日志输出)
-    > - heap dump数据（需指定--liveheap开启）：jmap -dump:live,format=b,file=${DUMP_FILE} $PID
+    > - heap dump数据（需指定--liveheap开启）：jmap -dump:live,format=b,file=[DUMP_FILE] [pid]
     
 1. [vjmxcli](java/bin/vjmxcli)
   
