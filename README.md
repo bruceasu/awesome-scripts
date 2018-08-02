@@ -191,7 +191,7 @@ opscripts uninstall
   
     `vjmxcli - [host:port] java.lang:type=Memory HeapMemoryUsage`
     
-    `vjmxcli.sh - [pid] gcutil [interval]`
+    `vjmxcli - [pid] gcutil [interval]`
     > 使用唯品会的vjmxcli获取MBean属性值以及在jstat无法使用时模拟jstat -gcutil。开启jmx时可以使用主机:端口号；未开启jmx则使用pid。
     > 
     > 更多信息请参考: https://github.com/vipshop/vjtools/tree/master/vjmxcli
@@ -255,8 +255,9 @@ opscripts uninstall
 	
 	`sudo swap [-s [-r]] [-g GREP_ARG]`
 	> 查询当前服务器各个进程占用swap的情况。
-	> -s 表示对swap占用量进行排序（升序） -r 表示对swap占用量进行排序（降序），使用-r的前提是-s参数开启。 -g grep命令的封装，用于查找特定类型的进程。比如我想查找带有java的进程，可以使用sudo wtool swap -g java
-注意，使用该功能需要sudo权限
+	> -s 表示对swap占用量进行排序（升序） -r 表示对swap占用量进行排序（降序），使用-r的前提是-s参数开启。 -g grep命令的封装，用于查找特定类型的进程。比如我想查找带有java的进程，可以使用sudo swap -g java
+	>
+	> 使用该功能需要sudo权限
 
 1. [tpl/run-cmd-tpl.sh](docs/shell.md#beer-tplrun-cmd-tplsh)    
     
