@@ -75,7 +75,7 @@ opscripts uninstall
     
 1. [housemd](java/bin/housemd)
 
-	`housemd pid [java_home]`
+	`housemd [pid] [java_home]`
 	> 使用housemd对java程序进行运行时跟踪，支持的操作有：
 	>
 	> - 查看加载类
@@ -96,7 +96,7 @@ opscripts uninstall
 
 1. [jvm](java/bin/jvm)	
 
-	`jvm pid`
+	`jvm [pid]`
 
 	> 执行jvm debug工具，包含对java栈、堆、线程、gc等状态的查看，支持的功能有： 
 	><pre>
@@ -133,7 +133,7 @@ opscripts uninstall
     
 1. [greys](java/bin/greys)
 
-    `greys [PID][@IP:PORT]`
+    `greys [pid][@ip:port]`
     > 使用greys对java程序进行运行时跟踪(不传参数，需要先`greys -C pid`,再greys)。支持的操作有：
     >
     > - 查看加载类，方法信息
@@ -190,6 +190,7 @@ opscripts uninstall
 1. [vjmxcli](java/bin/vjmxcli)
   
     `vjmxcli - [host:port] java.lang:type=Memory HeapMemoryUsage`
+    
     `vjmxcli.sh - [pid] gcutil [interval]`
     > 使用唯品会的vjmxcli获取MBean属性值以及在jstat无法使用时模拟jstat -gcutil。开启jmx时可以使用主机:端口号；未开启jmx则使用pid。
     > 
