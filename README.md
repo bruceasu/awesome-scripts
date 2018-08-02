@@ -240,7 +240,7 @@ opscripts uninstall
     > 安装pip, 将pip程序封装在了文件中，可以避免网络安装pip过慢。
 1. [redis](bin/redis)
     
-    `redis ip1[:port1][,ip2[:port2]] [port] "command"``
+    `redis ip1[:port1][,ip2[:port2]] [port] "command"`
     >批量执行redis命令(需要redis-cli)
 1. [send](bin/send)
 	
@@ -248,7 +248,7 @@ opscripts uninstall
 	> 使用nc发送文件（默认8888端口），接收方可以通过浏览器下载
 1. [hex](bin/hex)
 	
-	`hex [0x]number[b]`
+	`hex [[0x]number[b]]`
 	> 计算数字的10进制、16进制及2进制文本，输入参数默认为10进制，可选16进制（0x）及二进制（b）。
 
 1. [swap](bin/swap)
