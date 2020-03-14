@@ -1,6 +1,6 @@
 #!/bin/bash
 # @Function
-## convert to Absolute Path.
+# convert to Absolute Path.
 #
 # @Usage
 #   # print Absolute Path of current directory.
@@ -8,7 +8,8 @@
 #   # print Absolute Path of arguments.
 #   $ ./ap a.txt ../dir1/b.txt
 #
-# @author Jerry Lee
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-2.x/docs/shell.md#-ap-and-rp
+# @author Jerry Lee (oldratlee at gmail dot com)
 
 [ $# -eq 0 ] && files=(.) || files=("$@")
 
